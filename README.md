@@ -46,7 +46,7 @@ ERC-20-shaped events are not proof that balance changes occurred or tokens are l
 
 The POST `/api/explain` endpoint accepts `{ "hash": "0x…", "network": "base" }`. It reads only fixed public RPC endpoints (no user-provided URLs), has upstream timeouts and does not broadcast transactions. Hashes are sent to the hosting server and RPC provider. No report database or analytics SDK is configured; infrastructure providers can retain operational logs. Public RPC endpoints are rate-limited and not suitable for production-scale traffic. Add a dedicated provider, shared rate limiting, telemetry with privacy controls and response validation before production use.
 
-Deployment is a Vercel preview, connected to this repository. No production domain or payment service is configured.
+Hosted on Vercel as an early build, connected to this repository. Vercel assigned the first deployment to the project’s production environment; it is still a prototype with Vercel Authentication enabled. No custom domain or payment service is configured.
 
 ## Next milestones
 
